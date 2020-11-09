@@ -1,10 +1,6 @@
 const EXTENSION_PREFIX = "Config for Meet: ";
 const SCRIPT_TIMEOUT = 20_000;
-
 let inTime = true;
-setTimeout(() => {
-  inTime = false;
-}, SCRIPT_TIMEOUT);
 
 if (
   document.readyState === "complete" ||
@@ -18,6 +14,11 @@ if (
 }
 
 async function muteInputs() {
+  console.log('Muting');
+  setTimeout(() => {
+    inTime = false;
+  }, SCRIPT_TIMEOUT);
+
   try {
     const videoToggle = await waitForSelector(
       '[aria-label^="Turn off camera"] > div:first-child'
