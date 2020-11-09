@@ -6,7 +6,8 @@
   "description": "Set default configuration for Google Meet.",
 
   "icons": {
-    "48": "icons/border-48.png"
+    "48": "icons/meet-config-48.png",
+    "96": "icons/meet-config-96.png"
   },
 
   "content_scripts": [
