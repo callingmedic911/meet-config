@@ -1,5 +1,5 @@
 const EXTENSION_PREFIX = "Config for Meet: ";
-const SCRIPT_TIMEOUT = 20_000;
+const SCRIPT_TIMEOUT = 20000;
 let inTime = true;
 
 if (
@@ -14,7 +14,6 @@ if (
 }
 
 async function muteInputs() {
-  console.log('Muting');
   setTimeout(() => {
     inTime = false;
   }, SCRIPT_TIMEOUT);
